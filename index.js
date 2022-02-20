@@ -23,6 +23,6 @@ app.use('/api/auth', require('./routes/auth'))
 app.use('/api/events', require('./routes/events'))
 
 // Escuchar peticiones
-app.listen( process.env.PORT || 8081, () => {
-    console.log(`Servidor corriendo en puerto ${8081}`);
+app.listen( process.env.PORT, () => {
+    console.log(`Servidor corriendo en puerto ${process.env.PORT}`);
 })
